@@ -1,0 +1,10 @@
+def fibo(n):
+    result=1
+    if n>=2:
+        result=fibo(n-2)+fibo(n-1)
+    return result
+
+n=int(input("请输入大于0的整数："))
+print("前{0}项斐波那契数列为：".format(n))
+for i in range(n):
+    print( fibo(i))

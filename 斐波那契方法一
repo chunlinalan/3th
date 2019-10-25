@@ -1,0 +1,14 @@
+n=int(input("请输入大于0的数值："))
+
+if n>=3:
+    fibo=[1,1]
+    count=1
+    while len(fibo)<n:
+        fibo.append(fibo[count]+fibo[count-1])
+        count+=1
+elif n==2:
+    fibo=[1,1]
+else:
+     fibo=[1]
+        
+print("斐波那契数列为：",fibo)

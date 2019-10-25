@@ -1,0 +1,18 @@
+def fibo(n):
+    result=1
+    num=0
+    i=0
+    mid=0
+    while i<n:         
+        num=result
+        result+=mid
+        mid=num
+        i+=1
+    return result
+
+n=int(input("请输入大于0的整数："))
+print("前{0}项斐波那契数列为：".format(n))
+fibo_list=list()
+for index in range(n):
+    fibo_list.append(fibo(index))
+print(fibo_list)
